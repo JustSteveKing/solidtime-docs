@@ -4,7 +4,7 @@ const config: ZudokuConfig = {
   page: {
     logo: {
       src: { light: "/logo-light.svg", dark: "/logo-dark.svg" },
-      alt: "Zudoku",
+      alt: "SolidTime",
       width: "130px",
     },
   },
@@ -15,34 +15,21 @@ const config: ZudokuConfig = {
       items: [
         {
           type: "category",
-          label: "Getting Started",
+          label: "User Guide",
           icon: "sparkles",
           items: [
-            "/introduction",
-            {
-              type: "link",
-              icon: "folder-cog",
-              badge: {
-                label: "New",
-                color: "purple",
-              },
-              label: "API Reference",
-              to: "/api",
-            },
+            "/user-guide/intro",
+            "/user-guide/roles",
+            "/user-guide/billable-rates"
           ],
         },
         {
           type: "category",
-          label: "Useful Links",
+          label: "Self Hosting",
           collapsible: false,
           icon: "link",
           items: [
-            {
-              type: "link",
-              icon: "book",
-              label: "Zudoku Docs",
-              to: "https://zudoku.dev/docs/",
-            },
+            "/self-hosting/intro"
           ],
         },
       ],
@@ -50,10 +37,10 @@ const config: ZudokuConfig = {
     {
       type: "link",
       to: "/api",
-      label: "API Reference",
+      label: "Solidtime API Reference",
     },
   ],
-  redirects: [{ from: "/", to: "/introduction" }],
+  redirects: [{ from: "/", to: "/user-guide/intro" }],
   apis: [
     {
       type: "file",
