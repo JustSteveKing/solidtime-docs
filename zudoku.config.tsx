@@ -39,7 +39,8 @@ const config: ZudokuConfig = {
           collapsible: false,
           icon: "link",
           items: [
-            "/self-hosting/intro"
+            "/self-hosting/intro",
+            "/self-hosting/container-mode",
           ],
         },
       ],
